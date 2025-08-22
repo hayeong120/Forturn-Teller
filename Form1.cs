@@ -16,5 +16,10 @@ namespace Forturn_Teller
         {
             InitializeComponent();
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
