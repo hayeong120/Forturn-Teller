@@ -35,7 +35,9 @@
             this.tbBirthday = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.tbResult = new System.Windows.Forms.TextBox();
             this.tbBirthtime.SuspendLayout();
+            this.btnShowResult.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbBirthtime
@@ -55,6 +57,7 @@
             // 
             // btnShowResult
             // 
+            this.btnShowResult.Controls.Add(this.tbResult);
             this.btnShowResult.Location = new System.Drawing.Point(403, 12);
             this.btnShowResult.Name = "btnShowResult";
             this.btnShowResult.Size = new System.Drawing.Size(385, 426);
@@ -104,6 +107,16 @@
             this.button1.Text = "결과 보러가기";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // tbResult
+            // 
+            this.tbResult.Location = new System.Drawing.Point(6, 20);
+            this.tbResult.Multiline = true;
+            this.tbResult.Name = "tbResult";
+            this.tbResult.ReadOnly = true;
+            this.tbResult.Size = new System.Drawing.Size(373, 400);
+            this.tbResult.TabIndex = 0;
+            this.tbResult.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -115,6 +128,8 @@
             this.Text = "포츈텔러";
             this.tbBirthtime.ResumeLayout(false);
             this.tbBirthtime.PerformLayout();
+            this.btnShowResult.ResumeLayout(false);
+            this.btnShowResult.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -128,6 +143,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox tbResult;
     }
 }
 

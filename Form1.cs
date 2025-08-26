@@ -26,5 +26,10 @@ namespace Forturn_Teller
         {
 
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
