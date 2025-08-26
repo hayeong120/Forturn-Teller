@@ -29,7 +29,24 @@ namespace Forturn_Teller
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
+            
+        }
 
+        private void 삼담내역불러오기ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormHistory form = new FormHistory();
+            form.Show();
+        }
+
+        private void 포츈텔러정보ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormAbout form = new FormAbout();
+            form.ShowDialog();
+        }
+
+        private void 끝내기ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
