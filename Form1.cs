@@ -34,8 +34,16 @@ namespace Forturn_Teller
 
         private void 삼담내역불러오기ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormHistory form = new FormHistory();
-            form.Show();
+            FormHistory form = Application.OpenForms["FormHistory"] as FormHistory;
+            if(form != null)
+            {
+                form.Activate();
+            }
+            else
+            {
+                form = new FormHistory(this);
+                form.Show();
+            }
         }
 
         private void 포츈텔러정보ToolStripMenuItem_Click(object sender, EventArgs e)
