@@ -57,5 +57,11 @@ namespace Forturn_Teller
             lbHistory.Items.Clear();
             lbHistory.Items.AddRange(history.ToArray());
         }
+
+        private void lbHistory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string message = history[lbHistory.SelectedIndex];
+            form1.LoadHistory(message);
+        }
     }
 }
