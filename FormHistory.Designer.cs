@@ -36,11 +36,6 @@
             // 
             this.lbHistory.FormattingEnabled = true;
             this.lbHistory.ItemHeight = 12;
-            this.lbHistory.Items.AddRange(new object[] {
-            "2025-08-24 13:00:01 - 20070101 08 - 올해 귀인이 찾아와서 큰 도움을 줄 것임",
-            "2025-08-24 13:02:05 - 20070101 08 - 올해 귀인이 찾아와서 큰 도움을 줄 것임",
-            "2025-08-24 13:25:23 - 20070101 08 - 올해 귀인이 찾아와서 큰 도움을 줄 것임",
-            "2025-08-24 13:48:21 - 20070101 08 - 올해 귀인이 찾아와서 큰 도움을 줄 것임"});
             this.lbHistory.Location = new System.Drawing.Point(12, 66);
             this.lbHistory.Name = "lbHistory";
             this.lbHistory.Size = new System.Drawing.Size(309, 364);
@@ -54,6 +49,7 @@
             this.btnRefresh.TabIndex = 1;
             this.btnRefresh.Text = "내역 다시 불러오기";
             this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // FormHistory
             // 
