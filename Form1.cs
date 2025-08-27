@@ -73,15 +73,22 @@ namespace Forturn_Teller
             }
         }
 
-        private void 포츈텔러정보ToolStripMenuItem_Click(object sender, EventArgs e)
+        private string GetFortune()
         {
-            FormAbout form = new FormAbout();
-            form.ShowDialog();
+            Random random = new Random();
+            int index = random.Next(0, results.Count);
+            return results[index];
         }
 
         private void 끝내기ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void 포츈텔러정보ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormAbout form = new FormAbout();
+            form.ShowDialog();
         }
     }
 }
